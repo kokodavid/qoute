@@ -18,6 +18,12 @@ export class QuoteComponent implements OnInit {
     new Quote(6, 'Plot my world domination plan','Cause I am an evil overlord'),
 ]
  
+completeQuote(isComplete,index){
+  if (isComplete){
+      this.quotes.splice(index,1);
+      }
+      }
+
 toogleDetails(index){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
 }

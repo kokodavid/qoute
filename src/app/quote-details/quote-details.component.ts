@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 import { Quote } from '../quote'
 
 @Component({
@@ -9,8 +9,13 @@ import { Quote } from '../quote'
 export class QuoteDetailsComponent implements OnInit {
 
 @Input() quote:Quote;
-  constructor() { }
+@Output() isComplete= new EventEmitter<boolean>();
 
+ 
+    quoteComplete(complete:boolean){
+      this.isComplete.emit(complete);
+  }
+  constructor() { }
   ngOnInit() {
   }
 
