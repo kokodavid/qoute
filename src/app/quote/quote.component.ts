@@ -10,23 +10,36 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,'Watch Finding Nemo','Find an online version and watch merlin find his son'),
-    new Quote(2,'Buy Cookies','I have to buy cookies for the parrot'),
-    new Quote(3, 'Get new Phone Case','Diana has her birthday coming up soon'),
-    new Quote(4, 'Get Dog Food','Pupper likes expensive sancks'),
-    new Quote(5, 'Solve math homework','Damn Math'),
-    new Quote(6, 'Plot my world domination plan','Cause I am an evil overlord'),
+    new Quote(1,'Eleanor Roosevelt','“Great minds discuss ideas; average minds discuss events; small minds discuss people.”',new Date(2018,3,14)),
+    new Quote(2,'David Brinkley','“A successful man is one who can lay a firm foundation with the bricks others have thrown at him.”',new Date(2018,3,14)),
+    new Quote(3, '-John F. Kennedy','“Those who dare to fail miserably can achieve greatly.”',new Date(2018,3,14)),
+    new Quote(4, 'Stephen King','“Get busy living or get busy dying.”',new Date(2018,3,14)),
+    new Quote(5, 'Solve math homework','Damn Math',new Date(2018,3,14)),
+    new Quote(6, 'Abraham Lincoln','“I’m a success today because I had a friend who believed in me and I didn’t have the heart to let him down.'
+    ,new Date(2018,3,14)),
 ]
  
+
+toogleDetails(index){
+  this.quotes[index].showDescription = !this.quotes[index].showDescription;
+}
+
+
+addNewQuote(quote){
+  let quoteLength = this.quotes.length;
+  quote.id=quoteLength+1;
+  quote.timePassed = new Date(quote.timePassed)
+  this.quotes.push(quote);
+
+}
+
+
 completeQuote(isComplete,index){
   if (isComplete){
       this.quotes.splice(index,1);
       }
       }
 
-toogleDetails(index){
-  this.quotes[index].showDescription = !this.quotes[index].showDescription;
-}
 
 constructor() { }
 ngOnInit() {

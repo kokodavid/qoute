@@ -1,11 +1,19 @@
 <h1>QUOTES APP</h1>
-<hr>
 
+<div class="container">
+
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    
+    </div>
 <ul>
-    <div *ngFor='let quote of quotes;let i = index'>
+    <div class="row" *ngFor='let quote of quotes;let i = index'>
         <li >{{quote.name}}</li> 
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
+        <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
         <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+        
+     
+    
     </div>
 </ul>
   
