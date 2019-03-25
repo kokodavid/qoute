@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 body{
-background-color: rgb(0, 116, 90);
+  background-image: url("assets/images/lpo.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -11,5 +11,5 @@ h1{
 }
 
 p{
-    color: rgba(0, 0, 0, 0.747);
+    color: rgba(25, 0, 255, 0.747);
 }
