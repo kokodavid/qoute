@@ -1,27 +1,27 @@
   
 <div class="container-fluid">
   <div class="row">
-      <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
+      <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
           <div class="form-group">
 
-              <label for="name">Quote</label>
+              <label for="name">Author</label>
               <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
               
           
 
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-              <p> Type a Quote. </p>              
+              <p> Name of Author. </p>              
           </div>  
               
           </div>
           <div class="form-group">
 
-              <label for="author">Author</label>
+              <label for="author">Quote</label>
               <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="name" required>
              
 
               <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                  <p> Enter the name of the person to whom the quote is credited. </p>              
+                  <p> Enter the quote below. </p>              
               </div>  
 
           </div>
