@@ -7,6 +7,9 @@ Name:David Mochoge.
 The quotes app is  a web application that comprise of a quotes that motivates the users on their everyday life,the user is also given a chance to add their quotes to the app so as to be shared with other people also.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
+## Contacts
+contact the developer through tel:0770057240 or mail:kingkgdave@gmail.com
+
 ## Link to Github pages
 link to github pages  https://kokodavid.github.io/qoute/
 ## Licence
