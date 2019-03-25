@@ -8,7 +8,7 @@ The quotes app is  a web application that comprise of a quotes that motivates th
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Link to Github pages
-
+link to github pages  https://kokodavid.github.io/qoute/
 ## Licence
 The app uses Mit licence
 
