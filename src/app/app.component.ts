@@ -7,7 +7,7 @@ import { Quote } from './quote'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  quote = [
+  quotes = [
     new Quote(1,'Eleanor Roosevelt','“Great minds discuss ideas; average minds discuss events; small minds discuss people.”',new Date(2018,3,14)),
     new Quote(2,'David Brinkley','“A successful man is one who can lay a firm foundation with the bricks others have thrown at him.”',new Date(2018,3,14)),
     new Quote(3, '-John F. Kennedy','“Those who dare to fail miserably can achieve greatly.”',new Date(2018,3,14)),
