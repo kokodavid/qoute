@@ -1,5 +1,8 @@
 # Quote
-
+THE QUOTES WEB APPLICATION
+Author Name:David Mochoge.
+DESCRIPTION:
+The quotes app is  a web application that comprise of aquotes that motivates the users on their everyday life,the user is also given a chance to add their quotes to the app so as to be shared with other people also.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
 ## Development server
